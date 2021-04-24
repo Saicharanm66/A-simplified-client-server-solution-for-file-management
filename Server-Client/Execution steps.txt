@@ -1,0 +1,210 @@
+STEPS TO EXECUTE TO THE PROGRAM :
+
+Initially decide a location on your PC where you need to store the data of client.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+1-INITIAL WORKS:
+
+Step 1:
+Create a root folder with name "Root" on that location.
+
+Step 2:
+Enter the Root forder and create a folder in it named as "admin"
+
+Step 3:
+Enter into admin folder and create a text(txt) file named as Register.Where all the registration data are stored in this txt file.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+NOTE : Make sure that the Root folder and the three py files(server.py,client.py,operations_code.py) are at same location
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Step 4:
+Open server.py,client.py and operations_code.py files using IDLE or Visual code
+
+Step 5:
+In server.py, change the path in lines 42,48,94 as the path that navigates to new 'register.txt' file
+In client.py, change the path in line 38 as the path that navigate to new 'register.txt' file
+
+step 6:
+In operations_code.py file, change the path in line 52 as the path that navigates to new 'root' file path having '\\{self.user_id}\\' attached to the path as there in code.
+
+Note:
+Make sure that the slashes are given double.
+For example:C:\\Users\\desktop\\root\\....etc.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+2-INITIATING SERVER:
+
+Step 7:
+Now open  the command prompt and navigate to the location where the code files exists
+
+Step 8:
+Run the server code file using a command
+'python server.py'
+(This will intiate a server)
+
+step 9:
+Open another command prompt and Repeat step 4 
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+3-REGISTRATION:
+
+step 10:
+Run the client code file using a command
+'python client.py'
+(This code runs in the initiated server)
+This displays a question about registration.Choose your option accordingly.
+
+step 11:
+Give 'n' or 'N' or 'no' or 'No' as input(As this is new registration)
+This displays registration page.
+
+step 12:
+Enter your first name and press enter
+
+step 13:
+Enter your second name and press enter
+
+step 14:
+Enter the user name you needed and press enter
+
+step 15:
+Entre the password and press enter
+
+step 16:
+Confirm the password by entering again the prreviously entered password and pres enter.
+Now the registration is completed.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+4-LOGIN:
+
+step 17:
+Now perform step 7 again
+
+step 18:
+As you are registered, Enter the option 'Y' or 'y' or 'yes' or 'Yes'.
+(This displays login page)
+
+step 19:
+Now enter the user name and press enter.
+
+step 20:
+Now enter the password correctly.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+NOTE:If the entered password or username is wrong,the access will be denied.
+If correct, the page to perform operations is displayed.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+FOLDER CREATION:
+
+step 21:
+Now give '1' or 'create new folder' or 'Create new folder' or 'create_folder' as input and press enter.
+
+step 22:
+Enter the desired folder name.
+Folder with given name is created.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+NOTE:If the folder name is already exists,a statement stating that folder already exists will be displayed.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+CREATING AND WRITING FILE:
+
+step 23:
+Now give '2' or 'create a new file' or 'Create a new file' or 'write_file' as input and press enter.
+
+step 24:
+Enter the folder name that already created
+NOTE:If there is no folder as the folder name entered,A statement stating folder doen't exists is displayed.
+
+step 25:
+Enter the desired file name to be created
+
+step 26:
+Enter the data that the file should contain
+The file with desired data is created
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+READING THE EXISTING FILE:
+
+step 27:
+Now give '3' or 'open the file' or 'Open the file' or 'read_file' as input and press enter.
+
+step 28:
+Enter the folder name that already created
+
+step 29:
+Enter the file name that already created
+The data in the file will be displayed.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+NOTE: 1-If there is no folder as the folder name entered,A statement stating folder doen't exists is displayed.
+      2--If there is no file as the file name entered,A statement stating file doen't exists is displayed.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+LIST OF DIRECTORIES:
+
+step 30:
+Now give '4' or 'View list of folders' or 'View list of folders' or 'folders list' or 'list' as input and press enter.
+This shows the folders present in client folder and the data it consumed,date of modified and created.
+
+NOTE : The list of directories will shows error when  it is accessed before the creation and modification of any single file or folder.
+
+CHANGING FOLDER PATH
+
+step 31:
+Now give '5' or 'change_folder' as input and press enter.
+
+step 32:
+The path will be changed.
+
+CHANGING FOLDER NAME
+
+step 31:
+Now give '6' or 'rename folder' or 'Rename folder' as input and press enter.
+
+step 32:
+Enter the folder name that you need to rename.Press enter.
+
+step 33:
+Enter the new name to the selected folder and press enter.The name will be changed.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+LOGGING OUT:
+
+step 34:
+Now give '0' or 'Logout' or 'logout' as input and press enter.
+This will logout the client.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+NOTE : If any null input is given or any invalid input is given,the server or client may halt.If it happens, press ctrl+c in both command prompt panels to terminate the server and client.
+Navigate and open the Register.txt document in admin folder which is in Root folder and clear "Status : Logged in" from every line.
+Now continue the process from Step 7.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+STEPS TO PERFORM DOCTEST:
+Step1:
+Open command prompt and change the current directory to path where the codes exist.
+
+Step 2:
+Run "python -m doctest -v operations_code.py" command.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+STEPS TO PERFORM PYLINT TEST:
+Step for server code:
+Open command prompt,navigate current directory path to the location where codes present and run "python -m doctest -v server.py" command.
+Step for client code:
+Open command prompt,navigate current directory path to the location where codes present and run "python -m doctest -v client.py" command.
+Step for operations_code code:
+Open command prompt,navigate current directory path to the location where codes present and run "python -m doctest -v operations_code.py" command.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
